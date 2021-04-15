@@ -1,8 +1,12 @@
+@import 'header.scss';
+
 $banana: #ff3535;
+* { box-sizing: border-box;}
 
 h1 {
   display: flex;
   justify-content: center;
+  color: #ff3535;
 
   span {
     color: $banana;
