@@ -9,6 +9,7 @@ header {
     .container {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   
     ul {
@@ -16,7 +17,10 @@ header {
   
       li {
         list-style: none;
-        margin-left: 45px;
+        
+        &:not(:last-child) {
+          margin-right: 45px;
+        }
       }
   
       a {

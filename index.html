@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>THESIS</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="images/logo.svg" alt="Cheshire County">
+            <a href="hero"><img src="images/logo.svg" alt="Cheshire County"></a>
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Features</a>
+                        <a href="#features">Features</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Pricing</a>
+                        <a href="#pricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="#">Reviews</a>
+                        <a href="#reviews">Reviews</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -42,7 +43,25 @@
                 <div class="download_button"><a href="/images/myw3schoolsimage.jpg" download>DOWNLOAD</a></div>
             </div>
         </section>
-    </main>
-    <h1>Hello <span>there</span></h1>
+        <section class="gallery">
+            <div class="container">
+                <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><h2>WHAT OUR CUSTOMERS ARE SAYsdfgsdfgsdfgsdfgsdfgING</h2></div>
+                    <div class="swiper-slide"><h2>WHAT OUR CUSTOMERS ARE SAYsdfgsdfgsdfgsdfgsdfgING</h2><h2>WHAT OUR CUSTOMERS ARE SAYsdfgsdfgsdfgsdfgsdfgING</h2></div>
+                    <div class="swiper-slide"><img class="hero_image" src="images/hero_background.jpg" alt=""></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>                
+                </div>
+            </div>
+        </section>
+    </main>    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
