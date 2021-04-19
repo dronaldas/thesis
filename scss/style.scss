@@ -1,14 +1,38 @@
-@import 'header.scss';
-
-$banana: #ff3535;
-* { box-sizing: border-box;}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  color: #ff3535;
-
-  span {
-    color: $banana;
-  }
+:root {
+  font-size: 10px;
 }
+h1{
+  font-size: 3.6rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.4rem;
+}
+* { 
+  box-sizing: border-box; 
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@import 'component/header.scss';
+@import 'component/hero.scss';
+@import 'component/variables.scss';
+@import 'component/footer.scss';
+
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');

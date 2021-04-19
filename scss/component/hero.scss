@@ -1,0 +1,47 @@
+
+.hero {
+    position: relative;
+    background: pink;
+  
+    &:after,
+    &_image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    &:after {
+      content: "";
+      background-color: var(--dark);
+      opacity: 0.63;
+    }
+  
+    &_image {
+      object-fit: cover;
+    }
+  
+    .hero_content {
+      position: relative;
+      padding-top: 65px;
+      padding-bottom: 140px;
+      color: #fff;
+      z-index: 1;  
+      h1 {
+        margin: 0;
+      }
+      .download_button {
+        margin-top: 40px;        
+        a{
+          font-size: 1.4rem;
+          text-decoration: none;
+          background-color: rgba(2,2,2,0);
+          border: 2px solid #fff;
+          color: #fff;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+  
