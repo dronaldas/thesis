@@ -1,4 +1,4 @@
-
+//hero after header section
 .hero {
     position: relative;
     background: pink;
@@ -43,5 +43,34 @@
         }
       }
     }
+}
+
+
+//section - hero_footer
+.hero_footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .content {
+    padding-right: 10px;
   }
-  
+  .social_icons {
+    padding-left: 10px;
+  }
+}
+
+
+//section - footer
+.section_footer {
+  background-color: var(--dark);
+}
+.section_footer .footer {
+  flex-direction: row-reverse;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .content {
+    color:rgba(255, 255, 255, 0.5);
+    text-align: right;
+    padding: 0;
+    padding-left: 10px;
+  }
+}

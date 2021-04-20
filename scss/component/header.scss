@@ -6,27 +6,27 @@ header {
     background-color: var(--dark);
     z-index: 10;
   
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
-    ul {
-      display: flex;
-  
-      li {
-        list-style: none;
-        
-        &:not(:last-child) {
-          margin-right: 45px;
-        }
-      }
-  
+  nav {
+     ul {
+    display: flex;
+
+    li {
+      list-style: none;
       a {
         font-size: 1.4rem;
         color: #fff;
         text-decoration: none;
+       }
+      &:not(:last-child) {
+        margin-right: 45px;
       }
     }
+   }
   }
+}
