@@ -158,6 +158,7 @@
       .content{
         width: 100%;
         color: #fff;
+        padding: 0 50px;
       }
       .images {
         position: relative;
@@ -166,33 +167,32 @@
         .two_images {
           display: flex;
           justify-content: space-between;
+          margin-bottom: 20px;
             .explore img, .veges img {
-            width: 168px;
+            width: 100%;
             }
           }
           &.image_cover {
           }
       }
       .one_bigger_image img {
-        width: 362px;
+        width: 100%;
       }
     }
   }
 }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: scaleY(-1);
-    transform-origin: center;
-  }
-  100% {
-    opacity: 1;
-    transform: scaleY(1);
-    transform-origin: center;
-  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: rotateZ(-115deg);
+      transform-origin: left top;
+    }
+    100% {
+      opacity: 1;
+      transform: rotateZ(0deg);
+      transform-origin: left top;
+    }
 }
-
 //tabs section ends
 
 
@@ -232,6 +232,49 @@
   }
 }
 // black section ends
+
+
+
+// awesome section
+.awesome_section {
+  text-align: center;
+  padding: 100px 0;
+
+  .flex_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    .small_container {
+      max-width: 300px;
+      margin: 0 30px;
+      padding: 0 10px;
+    }
+  }
+}
+// awesome section ends
+
+
+// pricing section
+.pricing_section {
+  background: var(--blue);
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+
+  .flex_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    .small_container {
+      max-width: 300px;
+      margin: 0 30px;
+      padding: 0 10px;
+    }
+  }
+}
+// pricing section ends
+
+
 
 
 // gallery section
