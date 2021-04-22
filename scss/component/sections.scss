@@ -1,7 +1,10 @@
 //hero
 .hero {
     position: relative;
-    margin-top: 50px;
+    margin-top: 55px;
+    height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
   
     &:after,
     &_image {
@@ -31,8 +34,16 @@
       h1 {
         margin: 0;
       }
+      .svg_spacer {
+        margin-top: 20 px;
+        margin-bottom: 20px;
+      }
+      .hero_logo {
+        width: 250px;
+        margin-bottom: 22px;
+      }
       .download_button {
-        margin-top: 40px; 
+        margin-top: 90px; 
         a{
           font-size: 1.4rem;
           text-decoration: none;
@@ -49,7 +60,7 @@
 
 
 // hero bottom footer
-.hero_section {
+.hero_footer {
   margin-top: 20px;
   margin-bottom: 20px;
   .content {
@@ -184,6 +195,43 @@
 
 //tabs section ends
 
+
+
+// black section
+.black_section {
+  background-color: var(--dark);
+  color: #fff;
+  padding: 80px 0;
+  .black_section_content {
+    display: flex;
+
+    .container_logo {
+      display: flex;
+      width: 400px;
+      flex-grow: 1;
+      .black_section_logo {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 160px;
+      }
+    }
+    .content {
+      width: 400px;
+      flex-grow: 1;
+      .bullets {
+        .bullet {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+         } 
+        .image {
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}
+// black section ends
 
 
 // gallery section
