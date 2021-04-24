@@ -36,16 +36,56 @@
     </header>
     <main>
         <section class="hero" id="hero">
-            <img class="hero_image" src="images/city.jpg" alt="">
-            <div class="container hero_content">
-                <img class="hero_logo" src="images/logo.svg" alt="Cheshire County">
-                <h1>Explained propriety of out perpetual to you</h1>
-                <svg class="svg_spacer" xmlns="http://www.w3.org/2000/svg" width="64" height="2" viewBox="0 0 64 2">
-                    <line id="Line_13" data-name="Line 13" x2="64" transform="translate(0 1)" fill="none" stroke="#fff" stroke-width="2"/>
-                  </svg> 
-                <p>Insipidity the sufficient discretion imprudence resolution sir him decisively.<br>Proceed how any engaged visitor. Explained propriety of out perpetual his you.<br>Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
-                <div class="download_button"><a href="/images/myw3schoolsimage.jpg" download>DOWNLOAD</a></div>
+            <div class="flex_container container">
+                <div class="content">
+                    <img class="hero_image" src="images/city.jpg" alt="">
+                    <div class="hero_content">
+                        <img class="hero_logo" src="images/logo.svg" alt="Cheshire County">
+                        <h1>Explained propriety<br>of out perpetual to you</h1>
+                        <svg class="svg_spacer" xmlns="http://www.w3.org/2000/svg" width="64" height="2" viewBox="0 0 64 2">
+                            <line id="Line_13" data-name="Line 13" x2="64" transform="translate(0 1)" fill="none" stroke="#fff" stroke-width="2"/>
+                        </svg> 
+                        <p>Insipidity the sufficient discretion imprudence resolution sir him decisively.<br>Proceed how any engaged visitor. Explained propriety of out perpetual his you.<br>Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
+                        <div class="download_button"><a href="/images/myw3schoolsimage.jpg" download>DOWNLOAD</a></div>
+                    </div>
+                </div>
+                <div class="form_container">
+                    <form>
+                        <div class="grey">
+                            <h3>Try your <span>free</span> trial today</h3>
+                        </div>
+                        <div class="white">
+                            <h4>Your details</h4>
+                            <input type="text" name="name" id="first_name" placeholder="First name">
+                            <input type="text" name="surname" id="last_name" placeholder="Last name">
+                            <input type="tel" name="number" id="phone_number" placeholder="Phone number">
+                            <h4>Type of subscription</h4>
+                            <div class="select_container">
+                                <div class="custom_radio">
+                                    <input type="radio" name="subscription" id="sub_month">
+                                    <label for="sub_month">
+                                        <div class="radio">
+                                        </div>
+                                        <span>MONTHLY</span>
+                                    </label>
+                                </div>
+                                <div class="custom_radio">
+                                    <input type="radio" name="subscription" id="sub_year">
+                                    <label for="sub_year">
+                                        <div class="radio">    
+                                        </div>
+                                        <span>YEARLY</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="green">
+                            <h3>Get started</h3>
+                        </div>
+                    </form>
+                </div>
             </div>
+            
         </section>
         <section class="hero_footer">
             <div class="container">
@@ -327,7 +367,7 @@
         <section class="gallery" id="reviews">
             <div class="container">
                 <div class="title">
-                    <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+                    <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="2" viewBox="0 0 64 2"><path id="divider_orange_u7" d="M0,0H64V2H0Z" fill="#6696e2"/></svg>
                 </div>
                 <!-- Slider main container -->
@@ -440,6 +480,48 @@
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>                
+                </div>
+            </div>
+        </section>
+        <section class="contact_us" id="contact">
+            <div class="container">
+                <h2>Contact us</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="2" viewBox="0 0 64 2"><rect id="divider_orange_u7_copy_2" data-name="divider_orange_u7 copy 2" width="64" height="2" fill="#e27866"/></svg>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="form_container">
+                    <form>
+                        <div class="grey">
+                            <h3>Try your <span>free</span> trial today</h3>
+                        </div>
+                        <div class="white">
+                            <h4>Your details</h4>
+                            <input type="text" name="name" id="first_name" placeholder="First name">
+                            <input type="text" name="surname" id="last_name" placeholder="Last name">
+                            <input type="tel" name="number" id="phone_number" placeholder="Phone number">
+                            <h4>Type of subscription</h4>
+                            <div class="select_container">
+                                <div class="custom_radio">
+                                    <input type="radio" name="subscription" id="sub_month">
+                                    <label for="sub_month">
+                                        <div class="radio">
+                                        </div>
+                                        <span>MONTHLY</span>
+                                    </label>
+                                </div>
+                                <div class="custom_radio">
+                                    <input type="radio" name="subscription" id="sub_year">
+                                    <label for="sub_year">
+                                        <div class="radio">    
+                                        </div>
+                                        <span>YEARLY</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="green">
+                            <h3>Get started</h3>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
