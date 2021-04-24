@@ -261,12 +261,53 @@
 
   .flex_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
     padding-top: 65px;
     .small_container {
-      max-width: 300px;
-      margin: 0 30px;
-      padding: 0 10px;
+      background: var(--lightDark);
+      max-width: 340px;
+      border-radius: 5px;
+      margin: 0 5px;
+      text-align: center;
+      p {
+        opacity: 0.5;
+      }
+      .price {
+        opacity: 1;
+        font-size: 9.4rem;
+        margin: 0;
+        span{
+          font-size: 3.4rem;
+        }
+      }
+
+      .green {
+        padding: 3px 0;
+        background: var(--green);
+        li {
+          color: #fff;
+        }
+      }
+      .white {
+        background: #fff;
+        border-radius: 0 0 5px 5px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 70px;
+        list-style-type: none;
+        color: var(--lightestDark);
+        text-transform: uppercase;
+        
+        li {
+          padding: 11px 0;
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+      
     }
   }
 }
