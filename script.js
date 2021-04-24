@@ -3,8 +3,19 @@
 
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
+    slidesPerView: 1,
     loop: true,
     autoHeight: true,
+    breakpoints: {
+      // when window width is >= 320px
+      600: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 480px
+      1000: {
+        slidesPerView: 3,
+      }
+    },
    
     // If we need pagination
     pagination: {
