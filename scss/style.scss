@@ -12,6 +12,9 @@
 :root {
   font-size: 10px;
 }
+html {
+  scroll-behavior: smooth;
+}
 h1{
   font-size: 3.6rem;
 }
@@ -35,6 +38,15 @@ body {
   margin: 0;
 }
 
+.no_select {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .container {
   max-width: 1140px;
   width: 100%;

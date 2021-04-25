@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <a href="#hero"><img src="images/logo.svg" alt="Cheshire County"></a>
-            <nav>
+            <nav id="navigation">
                 <ul>
                     <li>
                         <a href="#features">Features</a>
@@ -32,6 +32,7 @@
                     </li>
                 </ul>
             </nav>
+            <img class="menu-icon" id="mobile-menu-trigger" src="images/menu.svg" alt="Menu">
         </div>
     </header>
     <main>
@@ -79,7 +80,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="green" name="mysubmitbutton" id="subSubmitButton">
+                        <div class="green no_select" name="mysubmitbutton" id="subSubmitButton">
                             <h3>Get started</h3>
                         </div>
                     </form>
@@ -120,11 +121,11 @@
                 </div>
             </div>
         </section>
-        <section class="tab_section">
+        <section class="tab_section" id="features">
             <img class="hero_image" src="images/mountain.jpg" alt="">
                 <div class="container">
                     <nav>
-                        <ul>
+                        <ul class="no_select">
                             <li class="active" data-slide="1" data-aos="fade-in"><span>Register</span></li>
                             <li data-slide="2" data-aos="fade-in"><span>Apply</span></li>
                             <li data-slide="3" data-aos="fade-in"><span>Receive</span></li>
@@ -313,14 +314,16 @@
                             <p>Free for Life</p>
                         </div>
                         <div class="green"></div>
-                        <div class="white"><ul>
-                            <li>1gb od space</li>
-                            <li>10gb of bandwidth</li>
-                            <li>3 websites</li>
-                            <li>basic customization</li>
-                            <li>wordpress integration</li>
-                            <li>email support</li>
-                        </ul></div>
+                        <div class="white">
+                            <ul>
+                                <li>1gb od space</li>
+                                <li>10gb of bandwidth</li>
+                                <li>3 websites</li>
+                                <li>basic customization</li>
+                                <li>wordpress integration</li>
+                                <li>email support</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="crafted_container small_container">
                         <div class="black"><h3>Professional</h3>
@@ -512,7 +515,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div name="mysubmitbutton" id="identSubmitButton" class="green_button">
+                            <div name="mysubmitbutton" id="identSubmitButton" class="green_button no_select">
                                 <h3>send</h3>
                             </div>
                         </div>
