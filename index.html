@@ -495,9 +495,9 @@
                 <div class="form_container">
                     <form>
                         <div class="white">
-                            <input type="text" name="name" id="firstName" placeholder="First name" required>
-                            <input type="text" name="surname" id="lastName" placeholder="Last name" required>
-                            <input type="tel" name="number" id="phoneNumber" placeholder="Phone number" required>
+                            <input type="text" name="name" id="firstName_contact" placeholder="First name" >
+                            <input type="text" name="surname" id="lastName_contact" placeholder="Last name" >
+                            <input type="tel" name="number" id="phoneNumber_contact" placeholder="Phone number" >
                             <div class="select_container">
                                 <div class="custom_radio">
                                     <input type="radio" name="identification" id="identPersonal" required>
@@ -515,8 +515,10 @@
                                         <span>COMPANY</span>
                                     </label>
                                 </div>
+                                
                             </div>
-                            <div name="mysubmitbutton" id="identSubmitButton" class="green_button no_select">
+                            <h3 id="errorMessage_contact" class="required hidden">Please fill all form</h3>
+                            <div name="mysubmitbutton" id="contactSubmitButton" class="green_button no_select">
                                 <h3>send</h3>
                             </div>
                         </div>

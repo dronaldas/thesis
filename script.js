@@ -80,13 +80,16 @@ submitButton.addEventListener('click', function() {
   if (lastName.value.length && firstName.value.length && phoneNumber.value.length && (typeSubMonth.checked || typeSubYear.checked) > 0) {
     if (typeSubMonth.checked === true) {
       let subscription = "subscription monthly"
-    console.log(firstName.value + ", " + lastName.value + ", " + phoneNumber.value + ", " + subscription)
+    console.log(firstName.value + " " + lastName.value + ", " + phoneNumber.value + ", " + subscription)
     errorMessage.classList.add("hidden")
+    setTimeout(function() { alert("Subscription form = "+ firstName.value + " " + lastName.value + ", " + phoneNumber.value + ", " + subscription); }, 1500);
     }
     else {
       let subscription = "subscription yearly"
-    console.log(firstName.value + ", " + lastName.value + ", " + phoneNumber.value + ", " + subscription)
+    console.log(firstName.value + " " + lastName.value + ", " + phoneNumber.value + ", " + subscription)
     errorMessage.classList.add("hidden")
+    setTimeout(function() { alert("Subscription form = "+ firstName.value + " " + lastName.value + ", " + phoneNumber.value + ", " + subscription); }, 1500);
+    
     }
   }
   else {
@@ -95,3 +98,36 @@ submitButton.addEventListener('click', function() {
   }
 })
 //form submition ends
+
+
+//contact form 
+let submitButton_contact = document.getElementById('contactSubmitButton')
+let firstName_contact = document.getElementById('firstName_contact')
+let lastName_contact = document.getElementById('lastName_contact')
+let phoneNumber_contact = document.getElementById('phoneNumber_contact')
+let identPersonal = document.getElementById("identPersonal")
+let identCompany= document.getElementById("identCompany")
+let errorMessage_contact = document.getElementById("errorMessage_contact")
+
+submitButton_contact.addEventListener('click', function() {
+  if (lastName_contact.value.length && firstName_contact.value.length && phoneNumber_contact.value.length && (identPersonal.checked || identCompany.checked) > 0) {
+    if (identPersonal.checked === true) {
+      let identification = "personal"
+    console.log(firstName_contact.value + " " + lastName_contact.value + ", " + phoneNumber_contact.value + ", " + identification)
+    errorMessage_contact.classList.add("hidden")
+    setTimeout(function() { alert("Please contact me: "+ firstName_contact.value + " " + lastName_contact.value + ", " + phoneNumber_contact.value + ", " + identification); }, 1500);
+    }
+    else {
+      let identification = "company"
+    console.log(firstName_contact.value + " " + lastName_contact.value + ", " + phoneNumber_contact.value + ", " + identification)
+    errorMessage_contact.classList.add("hidden")
+    setTimeout(function() { alert("Please contact me: "+ firstName_contact.value + " " + lastName_contact.value + ", " + phoneNumber_contact.value + ", " + identification); }, 1500);
+    
+    }
+  }
+  else {
+    console.log("ivesk")
+    errorMessage_contact.classList.remove("hidden")
+  }
+})
+//contact form ends
