@@ -282,15 +282,21 @@
       display: flex;
       width: 400px;
       flex-grow: 1;
+      @media (max-width:500px) {
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 220px;
+      }
       .black_section_logo {
         width: 100%;
         padding-left: 40px;
         padding-right: 160px;
+        @media (max-width: 500px) {
+          padding: 0;
+        }
       }
-      @media (max-width:500px) {
-        padding: 0;
-        margin: 0 auto;
-      }
+      
     }
     .content {
       width: 400px;
@@ -359,7 +365,7 @@
       background: var(--lightDark);
       max-width: 340px;
       border-radius: 5px;
-      margin: 0 5px;
+      margin: 20px auto;
       text-align: center;
       p {
         opacity: 0.5;
