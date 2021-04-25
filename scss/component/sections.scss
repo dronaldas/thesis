@@ -23,6 +23,7 @@
       }
     @media (max-width: 800px) {
       flex-direction: column;
+      padding-bottom: 50px;
     }
     }
   
@@ -126,6 +127,10 @@
     justify-content: space-between;
     padding-top: 115px;
     padding-bottom: 115px;
+    @media (max-width: 400px) {
+      padding: 50px 20px;
+    
+    }
 
     //tabs/buttons
   nav {
@@ -142,6 +147,10 @@
         background-color: #a37169;
         transition: 0.3s ease-in-out;
         cursor: pointer;
+        @media (max-width:500px) {
+          width: 80px;
+          height: 80px;
+        }
 
         &:not(:last-child) {
           margin-bottom: 20px;
@@ -180,19 +189,33 @@
     }
     .flex {
       display: flex;
+      @media (max-width: 700px) {
+        flex-direction: column;
+        align-items: center;
+      }
       .content{
         width: 100%;
         color: #fff;
         padding: 0 50px;
+        @media (max-width: 700px) {
+          padding: 0;
+        }
       }
       .images {
         position: relative;
         width: 60%;
         justify-content: center;
+        @media (max-width: 700px) {
+          padding: 0;
+          width: 100%;
+        }
         .two_images {
           display: flex;
           justify-content: space-between;
           margin-bottom: 20px;
+          .explore, .veges {
+            width: 48%;
+          }
             .explore img, .veges img {
             width: 100%;
             }
@@ -203,6 +226,29 @@
       }
     }
   }
+  @media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  nav {
+    width: 320px;
+    margin: 0 auto;
+
+    ul {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+ }
+ @media (max-width: 400px) {
+  .container {
+    flex-direction: column;
+  }
+  nav {
+    width: 280px;
+  }
+ }
 }
   @keyframes fade-in {
     0% {
@@ -214,6 +260,8 @@
       transform-origin: left top;
     }
 }
+
+
 //tabs section ends
 
 
@@ -225,8 +273,11 @@
   padding: 80px 0;
   .black_section_content {
     display: flex;
-    flex-wrap: wrap;
-
+    @media (max-width:900px) {
+      flex-direction: column;
+      margin: 0 auto;
+      align-items: center;
+    }
     .container_logo {
       display: flex;
       width: 400px;
@@ -236,10 +287,17 @@
         padding-left: 40px;
         padding-right: 160px;
       }
+      @media (max-width:500px) {
+        padding: 0;
+        margin: 0 auto;
+      }
     }
     .content {
       width: 400px;
       flex-grow: 1;
+    @media (max-width:500px) {
+      width: 100%;
+    }
       .bullets {
         .bullet {
           display: flex;
@@ -261,6 +319,9 @@
 .awesome_section {
   text-align: center;
   padding: 100px 0;
+  @media (max-width: 400px) {
+    padding: 50px 20px;
+  }
 
   .flex_container {
     display: flex;
@@ -272,6 +333,9 @@
       min-width: 200px;
       margin: 0 30px;
       padding: 0 10px;
+      @media (max-width: 500px) {
+        margin: 20px 0;
+      }
     }
   }
 }
