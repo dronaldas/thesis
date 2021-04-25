@@ -63,7 +63,7 @@
                             <h4>Type of subscription</h4>
                             <div class="select_container">
                                 <div class="custom_radio">
-                                    <input type="radio" name="subscription" id="subMonth" required>
+                                    <input type="radio" name="subscription" id="subMonth" value="MONTHLY">
                                     <label for="subMonth">
                                         <div class="radio">
                                         </div>
@@ -71,7 +71,7 @@
                                     </label>
                                 </div>
                                 <div class="custom_radio">
-                                    <input type="radio" name="subscription" id="subYear" required>
+                                    <input type="radio" name="subscription" id="subYear" value="YEARLY">
                                     <label for="subYear">
                                         <div class="radio">    
                                         </div>
@@ -79,6 +79,7 @@
                                     </label>
                                 </div>
                             </div>
+                            <h3 id="errorMessage" class="required hidden">Please fill all form</h3>
                         </div>
                         <div class="green no_select" name="mysubmitbutton" id="subSubmitButton">
                             <h3>Get started</h3>

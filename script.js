@@ -3,13 +3,12 @@ document.getElementById('mobileBurger').addEventListener('click', function() {
   this.classList.toggle('active');
   document.getElementById('navigation').classList.toggle('active');
 });
-
-
-
 document.getElementById('menu').addEventListener('click', function() {
   this.classList.toggle('active');
   document.getElementById('navigation').classList.remove('active');
 });
+
+//mobile menu ends
 
 // swiper gallery
 
@@ -66,3 +65,33 @@ for (let tab of tabNavigationBlocks) {
   })
 }
 // tabs section ends
+
+
+//form submition
+let submitButton = document.getElementById('subSubmitButton')
+let firstName = document.getElementById('firstName')
+let lastName = document.getElementById('lastName')
+let phoneNumber = document.getElementById('phoneNumber')
+let typeSubYear = document.getElementById("subYear")
+let typeSubMonth = document.getElementById("subMonth")
+let errorMessage = document.getElementById("errorMessage")
+
+submitButton.addEventListener('click', function() {
+  if (lastName.value.length && firstName.value.length && phoneNumber.value.length && (typeSubMonth.checked || typeSubYear.checked) > 0) {
+    if (typeSubMonth.checked === true) {
+      let subscription = "subscription monthly"
+    console.log(firstName.value + ", " + lastName.value + ", " + phoneNumber.value + ", " + subscription)
+    errorMessage.classList.add("hidden")
+    }
+    else {
+      let subscription = "subscription yearly"
+    console.log(firstName.value + ", " + lastName.value + ", " + phoneNumber.value + ", " + subscription)
+    errorMessage.classList.add("hidden")
+    }
+  }
+  else {
+    console.log("ivesk")
+    errorMessage.classList.remove("hidden")
+  }
+})
+//form submition ends
