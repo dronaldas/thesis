@@ -14,13 +14,9 @@ header {
   .menu-icon {
     position: relative;
     display: none;
-    z-index: 5;
     width: 25px;
     height: 25px;
     cursor: pointer;
-    z-index: 1;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
 }
   nav {
 
