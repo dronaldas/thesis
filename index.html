@@ -56,22 +56,22 @@
                         </div>
                         <div class="white">
                             <h4>Your details</h4>
-                            <input type="text" name="name" id="first_name" placeholder="First name">
-                            <input type="text" name="surname" id="last_name" placeholder="Last name">
-                            <input type="tel" name="number" id="phone_number" placeholder="Phone number">
+                            <input type="text" name="name" id="firstName" placeholder="First name" required>
+                            <input type="text" name="surname" id="lastName" placeholder="Last name" required>
+                            <input type="tel" name="number" id="phoneNumber" placeholder="Phone number" required>
                             <h4>Type of subscription</h4>
                             <div class="select_container">
                                 <div class="custom_radio">
-                                    <input type="radio" name="subscription" id="sub_month">
-                                    <label for="sub_month">
+                                    <input type="radio" name="subscription" id="subMonth" required>
+                                    <label for="subMonth">
                                         <div class="radio">
                                         </div>
                                         <span>MONTHLY</span>
                                     </label>
                                 </div>
                                 <div class="custom_radio">
-                                    <input type="radio" name="subscription" id="sub_year">
-                                    <label for="sub_year">
+                                    <input type="radio" name="subscription" id="subYear" required>
+                                    <label for="subYear">
                                         <div class="radio">    
                                         </div>
                                         <span>YEARLY</span>
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="green">
+                        <div class="green" name="mysubmitbutton" id="subSubmitButton">
                             <h3>Get started</h3>
                         </div>
                     </form>
@@ -490,36 +490,31 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="form_container">
                     <form>
-                        <div class="grey">
-                            <h3>Try your <span>free</span> trial today</h3>
-                        </div>
                         <div class="white">
-                            <h4>Your details</h4>
-                            <input type="text" name="name" id="first_name" placeholder="First name">
-                            <input type="text" name="surname" id="last_name" placeholder="Last name">
-                            <input type="tel" name="number" id="phone_number" placeholder="Phone number">
-                            <h4>Type of subscription</h4>
+                            <input type="text" name="name" id="firstName" placeholder="First name" required>
+                            <input type="text" name="surname" id="lastName" placeholder="Last name" required>
+                            <input type="tel" name="number" id="phoneNumber" placeholder="Phone number" required>
                             <div class="select_container">
                                 <div class="custom_radio">
-                                    <input type="radio" name="subscription" id="sub_month">
-                                    <label for="sub_month">
+                                    <input type="radio" name="identification" id="identPersonal" required>
+                                    <label for="identPersonal">
                                         <div class="radio">
                                         </div>
-                                        <span>MONTHLY</span>
+                                        <span>PERSONAL</span>
                                     </label>
                                 </div>
                                 <div class="custom_radio">
-                                    <input type="radio" name="subscription" id="sub_year">
-                                    <label for="sub_year">
+                                    <input type="radio" name="identification" id="identCompany" required>
+                                    <label for="identCompany">
                                         <div class="radio">    
                                         </div>
-                                        <span>YEARLY</span>
+                                        <span>COMPANY</span>
                                     </label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="green">
-                            <h3>Get started</h3>
+                            <div name="mysubmitbutton" id="identSubmitButton" class="green_button">
+                                <h3>send</h3>
+                            </div>
                         </div>
                     </form>
                 </div>

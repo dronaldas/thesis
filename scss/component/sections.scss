@@ -3,11 +3,27 @@
     position: relative;
     margin-top: 55px;
     height: calc(100vh - 160px);
+    @media (max-width:800px) {
+      height: 100%;
+    }
 
     .flex_container {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding-top: 65px;
+      .content {
+        padding-right: 20px;
+        @media (max-width: 800px) {
+          padding: 0 0;
+          .download_button {
+            text-align: center;
+          }
+        }
+      }
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
     }
   
     &:after,
@@ -181,9 +197,7 @@
             width: 100%;
             }
           }
-          &.image_cover {
-          }
-      }
+        }
       .one_bigger_image img {
         width: 100%;
       }
@@ -360,6 +374,8 @@
     }
   }
   .review {
+    
+    cursor: default;
     margin: 0 auto;
     max-width: 280px;
     margin-bottom: 100px;
@@ -415,10 +431,38 @@
 
 // contactUs section
 .contact_us {
+  padding: 70px 0 50px 0;
   background: var(--orange);
   color: #fff;
   text-align: center;
+
+  .form_container {
+    margin: 0 auto;
   
+
+    .white {
+      border-radius: 5px;
+      padding-top: 30px;
+    }
+    .green_button {
+      cursor: pointer;
+      background: var(--green);
+      margin: 0 auto;
+      margin-bottom: 30px;
+      padding: 0 25px;
+      border-radius: 5px;
+      max-width: 160px;
+      min-width: 150px;
+
+      h3 {
+          font-weight: 500;
+          font-size: 1.8rem;
+          color: #fff;
+          text-transform: uppercase;
+      }
+    }
+  
+  }
 }
 // contactUs section ends
 

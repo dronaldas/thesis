@@ -13,23 +13,27 @@ header {
   }
   
   nav {
+
      ul {
     display: flex;
 
-    li {
-      list-style: none;
-      a {
-        font-size: 1.4rem;
-        color: #fff;
-        text-decoration: none;
-       }
-      &:not(:last-child) {
-        margin-right: 45px;
+      li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+        a {
+          font-size: 1.4rem;
+          color: #fff;
+          text-decoration: none;
+        }
+        &:not(:last-child) {
+          margin-right: 45px;
+        }
       }
     }
-   }
-   @media (max-width: 800px) {
-     display: none;
-   }
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 }
